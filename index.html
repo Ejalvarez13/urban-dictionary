@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBAN DICTIONARY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="search-title">
+                <h1>URBAN DICTIONARY</h1>
+            </div>
+            <div class="search-header">
+                <input type="text" id="search-value">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="search-results">
+                <p id="default-message">Search Something...</p>
+                <div id="loading">
+                    <img src="icons8-loading.gif" alt="loading">
+                    <p>Searching...</p>
+                </div>
+                <div id="error">
+                    <p>There seems to be a problem.</p>
+                </div>
+                <div id="no-results">
+                    <img width="50" height="50" src="https://img.icons8.com/ios/50/nothing-found.png"
+                        alt="nothing-found" />
+                    <p>There are no search results</p>
+                </div>
+                <div id="results">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
